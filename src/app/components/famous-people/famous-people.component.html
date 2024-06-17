@@ -1,0 +1,15 @@
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Year</th>
+        <th>Invention</th>
+    </tr>
+@for (p of peopleList.complete; track $index) {
+    <tr>
+        <td>{{p.firstName}} {{p.lastName}}</td>
+        <td>{{p.year}}</td>
+        <td>{{p.innovation}}</td>
+    </tr>
+}
+</table>
